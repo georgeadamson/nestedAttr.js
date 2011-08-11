@@ -24,3 +24,6 @@ options:
 
 By George Adamson August 2011
 
+
+TODO:
+- Allow for missing indexes in nested-arrays
