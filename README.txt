@@ -18,11 +18,11 @@ then the hash returned by the method will be formed of nested arrays and objects
 Other non-form elements can be parsed as "fields" too if you give them a data-name attribute. Their contents will be extracted as the "field value" unless you can specify the value explicitly in a data-value attribute.
 
 options:
-  seed     : An object hash representing the bare minimum data heirarchy you expect to return from this method. Attributes will be added to this. Use this to avoid blanks and missing arrays etc.
+  seed     : An object hash representing the bare minimum data heirarchy you expect to return from this method. Attributes will be added to this. Use this to avoid blanks and missing arrays etc in the resulting hash.
   trim     : A function for trimming the field values. Defaults to remove any whitespace prefix/suffix from field value. Is passed the field value as its first argument.
   isNested : A function to test whether the field name appears to use the nested[attributes][syntax]. Is passed the field name as its first argument.
 
-By George Adamson August 2011
+By @GeorgeAdamson August 2011
 
 
 TODO:
