@@ -1,9 +1,9 @@
 A custom jQuery method to convert nested-attributes field names into an object hash:
 (Similar to the way Rails converts field names to a models heirarchy)
 
-Sample usage: $(":text").nestedAttr()
+Sample usage: $(":text").nestedAttr() returns a {js-hash-of-hierarchal-data}
 So when the page contains a field like this: <input name="list[items_attributes][3][row]"> 
-then the hash returned by the method will include list.items_attributes[3].row
+then the hash returned by the method will include nested arrays and objects like: list.items_attributes[3].row
 
 Other non-form elements can be parsed as "fields" too if you give them a data-name attribute. Their contents will be extracted as the "field value" unless you can specify the value explicitly in a data-value attribute.
 
