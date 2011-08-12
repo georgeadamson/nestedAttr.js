@@ -21,7 +21,8 @@
       };
       options = $.extend( {}, defaults, options );
 
-      var result = options.seed, fields = this.find('*').andSelf().filter('[name],[data-name]');
+      var result = options.seed,
+          fields = this.find('*').andSelf().filter('[name],[data-name]');
 
       fields.each(function(){
         $.extend( true, result, $.nestedAttr(this,options) );
