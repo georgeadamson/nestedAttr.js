@@ -1,5 +1,5 @@
 A custom jQuery method to convert nested-attributes field names into an object hash.
-(Similar to the way Rails converts field names to a models heirarchy)
+(Similar to the way Rails converts field names to an object hash when a form has been submitted )
 
 Sample usage: $("INPUT").nestedAttr() returns a {js-hash-of-hierarchal-data}
 
